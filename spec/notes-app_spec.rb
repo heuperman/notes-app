@@ -7,4 +7,7 @@ describe 'Notes_app' do
   it "Shows user list of titles" do
     expect(show_notes).to eq("x")
   end
+  it "Display title and body" do
+    expect(display_note("x","y")).to eq("x","y")
+  end
 end

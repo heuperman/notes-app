@@ -1,4 +1,6 @@
 def add_note(string)
+  notes = []
+  notes.push("x")
   return string
 end
 
@@ -7,5 +9,6 @@ def show_notes
 end
 
 def display_note
-  return ["x", "y"]
+  notes = ["x", "y"]
+  return "x"
 end

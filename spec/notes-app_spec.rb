@@ -21,7 +21,7 @@ describe 'Notes_app' do
 
     it "returns x" do
       add_note("x")
-      expect { display_note }.to output(expected_output).to_stdout
+      expect(display_note).to output(expected_output).to_stdout
     end
   end
 end

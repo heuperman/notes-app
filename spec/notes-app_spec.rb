@@ -13,4 +13,15 @@ describe 'Notes_app' do
   it "Display title and body" do
     expect(display_note).to eq(["x", "y"])
   end
+
+  context "notes list" do
+    let(:note1) { "x" }
+
+    let(:expected_output) { "x" }
+
+    it "returns x" do
+      add_note("x")
+      expect { display_note }.to output(expected_output).to_stdout
+    end
+  end
 end

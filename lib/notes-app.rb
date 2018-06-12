@@ -6,6 +6,6 @@ def show_notes
   return "x"
 end
 
-def display_note(x, y)
+def display_note
   return ["x", "y"]
 end

@@ -1,3 +1,3 @@
 def add_note(string)
-  return
+  return string
 end

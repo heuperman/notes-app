@@ -1,15 +1,16 @@
-class Notes_app
+# NotesApp for storing user notes
+class NotesApp
   def initialize
     @notes = []
   end
 
   def take_note(title, body)
-    @notes << {:title => title, :body => body}
+    @notes << { title: title, body: body }
   end
 
   def list
-    @notes.each_with_index do |note,i|
-      puts "#{i+1}. #{note[:title]}"
+    @notes.each_with_index do |note, i|
+      puts "#{i + 1}. #{note[:title]}"
     end
   end
 

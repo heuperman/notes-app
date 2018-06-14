@@ -1,14 +1,20 @@
-def add_note(string)
-  notes = []
-  notes.push("x")
-  return string
-end
+class Notes_app
+  def initialize
+    @notes = []
+  end
 
-def show_notes
-  return "x"
-end
+  def take_note(title, body)
+    @notes << {:title => title, :body => body}
+  end
 
-def display_note
-  notes = ["x", "y"]
-  return "x"
+  def list
+    @notes.each_with_index do |note,i|
+      puts "#{i+1}. #{note[:title]}"
+    end
+  end
+
+  def show(number)
+    puts @notes[number - 1][:title]
+    puts @notes[number - 1][:body]
+  end
 end
